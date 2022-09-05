@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-20 00:37+0000\n"
-"PO-Revision-Date: 2022-05-21 00:47\n"
+"POT-Creation-Date: 2022-08-20 15:18+0000\n"
+"PO-Revision-Date: 2022-08-23 01:08\n"
 "Last-Translator: \n"
 "Language-Team: Romanian\n"
 "Language: ro_RO\n"
@@ -17,13 +17,17 @@ msgstr ""
 "X-Crowdin-File: django.po\n"
 "X-Crowdin-File-ID: 10\n"
 
-#: dmoj/settings.py:372
+#: dmoj/settings.py:371
 msgid "Catalan"
 msgstr "Catalană"
 
-#: dmoj/settings.py:373
+#: dmoj/settings.py:372
 msgid "German"
 msgstr "Germană"
+
+#: dmoj/settings.py:373
+msgid "Greek"
+msgstr "Greacă"
 
 #: dmoj/settings.py:374
 msgid "English"
@@ -83,7 +87,7 @@ msgstr "Chineză Simplificată"
 
 #: dmoj/settings.py:388
 msgid "Traditional Chinese"
-msgstr "Chineză Tradiţională"
+msgstr "Chineză Tradițională"
 
 #: dmoj/urls.py:32
 msgid "Activation Successful!"
@@ -97,9 +101,13 @@ msgstr ""
 msgid "Registration Not Allowed"
 msgstr ""
 
-#: dmoj/urls.py:97 templates/base.html:190
+#: dmoj/urls.py:93 templates/base.html:190
 msgid "Home"
 msgstr "Start"
+
+#: judge/admin/comments.py:23 judge/admin/interface.py:72
+msgid "Content"
+msgstr "Conținut"
 
 #: judge/admin/comments.py:40
 #, python-format
@@ -123,7 +131,7 @@ msgstr[2] "%d comentarii ascunse cu succes."
 
 #: judge/admin/comments.py:50
 msgid "Unhide comments"
-msgstr "Reafişează comentariile"
+msgstr "Reafișează comentariile"
 
 #: judge/admin/comments.py:58
 msgid "Associated page"
@@ -139,6 +147,12 @@ msgstr "Concursuri incluse"
 #: templates/user/user-problems.html:100
 msgid "Problem"
 msgstr "Problemă"
+
+#: judge/admin/contest.py:67 judge/views/problem.py:271
+#: templates/contest/contest.html:191 templates/user/user-tabs.html:5
+#: templates/user/users-table.html:23
+msgid "Problems"
+msgstr "Probleme"
 
 #: judge/admin/contest.py:123
 msgid "Settings"
@@ -166,7 +180,7 @@ msgstr "Acces"
 
 #: judge/admin/contest.py:132 judge/admin/problem.py:135
 msgid "Justice"
-msgstr "Justiţie"
+msgstr "Justiție"
 
 #: judge/admin/contest.py:230
 #, python-format
@@ -248,10 +262,6 @@ msgstr "virtual"
 msgid "link path"
 msgstr "calea link-ului"
 
-#: judge/admin/interface.py:72
-msgid "Content"
-msgstr "Conţinut"
-
 #: judge/admin/interface.py:73
 msgid "Summary"
 msgstr "Rezumat"
@@ -277,7 +287,7 @@ msgstr ""
 
 #: judge/admin/problem.py:29
 msgid "Describe the changes you made (optional)"
-msgstr "Descrie modificările făcute (opţional)"
+msgstr "Descrie modificările făcute (opțional)"
 
 #: judge/admin/problem.py:130
 msgid "Social Media"
@@ -300,7 +310,7 @@ msgstr "Limite"
 
 #: judge/admin/problem.py:134 judge/admin/submission.py:243
 #: templates/stats/tabs.html:4 templates/submission/list.html:319
-#: templates/user/edit-profile.html:296
+#: templates/user/edit-profile.html:290
 msgid "Language"
 msgstr "Limbaj"
 
@@ -359,13 +369,13 @@ msgstr "fus orar"
 msgid "User"
 msgstr "Utilizator"
 
-#: judge/admin/profile.py:103 templates/registration/registration_form.html:143
+#: judge/admin/profile.py:103 templates/registration/registration_form.html:149
 msgid "Email"
 msgstr "Email"
 
 #: judge/admin/profile.py:108 judge/views/register.py:28
-#: templates/registration/registration_form.html:171
-#: templates/user/edit-profile.html:292
+#: templates/registration/registration_form.html:177
+#: templates/user/edit-profile.html:286
 msgid "Timezone"
 msgstr "Fus orar"
 
@@ -375,10 +385,10 @@ msgstr "data alăturării"
 
 #: judge/admin/profile.py:120
 #, python-format
-msgid "%d user have scores recalculated."
-msgid_plural "%d users have scores recalculated."
+msgid "%d user had scores recalculated."
+msgid_plural "%d users had scores recalculated."
 msgstr[0] "%d utilizator au scoruri recalculate."
-msgstr[1] "%d utilizator au scoruri recalculate."
+msgstr[1] "%d utilizatorii au scoruri recalculate."
 msgstr[2] "%d utilizatorii au scoruri recalculate."
 
 #: judge/admin/profile.py:123
@@ -390,8 +400,8 @@ msgid "Disallowed problems"
 msgstr "Probleme nepermise"
 
 #: judge/admin/runtime.py:22
-msgid "These problems are NOT allowed to be submitted in this language"
-msgstr "Aceste probleme NU pot fi transmise în acest limbaj"
+msgid "These problems are NOT allowed to be submitted in this language."
+msgstr "Aceste probleme NU pot fi transmise în acest limbaj."
 
 #: judge/admin/runtime.py:77
 msgid "Description"
@@ -440,11 +450,11 @@ msgstr "%(problem)s în %(contest)s"
 
 #: judge/admin/submission.py:160 judge/admin/submission.py:182
 msgid "You do not have the permission to rejudge submissions."
-msgstr "Nu aveţi permisiunea de a rejuriza submisii."
+msgstr "Nu aveți permisiunea de a rejuriza submisii."
 
 #: judge/admin/submission.py:166
 msgid "You do not have the permission to rejudge THAT many submissions."
-msgstr "Nu aveţi permisiunea de a rejuriza ATÂT de multe submisii."
+msgstr "Nu aveți permisiunea de a rejuriza ATÂT de multe submisii."
 
 #: judge/admin/submission.py:178
 msgid "Rejudge the selected submissions"
@@ -452,10 +462,10 @@ msgstr "Rejurizează submisiile selectate"
 
 #: judge/admin/submission.py:204 judge/views/problem_manage.py:129
 #, python-format
-msgid "%d submission were successfully rescored."
+msgid "%d submission was successfully rescored."
 msgid_plural "%d submissions were successfully rescored."
 msgstr[0] "%d submisie a fost repunctată cu succes."
-msgstr[1] "%d submisie a fost repunctată cu succes."
+msgstr[1] "%d submisii au fost repunctate cu succes."
 msgstr[2] "%d submisii au fost repunctate cu succes."
 
 #: judge/admin/submission.py:207
@@ -494,12 +504,12 @@ msgid "Included problems"
 msgstr "Probleme incluse"
 
 #: judge/admin/taxon.py:14
-msgid "These problems are included in this group of problems"
-msgstr "Aceste probleme sunt incluse în acest grup de probleme"
+msgid "These problems are included in this group of problems."
+msgstr "Aceste probleme sunt incluse în acest grup de probleme."
 
 #: judge/admin/taxon.py:37
-msgid "These problems are included in this type of problems"
-msgstr "Aceste probleme sunt incluse în acest tip de probleme"
+msgid "These problems are included in this type of problems."
+msgstr "Aceste probleme sunt incluse în acest tip de probleme."
 
 #: judge/apps.py:8
 msgid "Online Judge"
@@ -614,106 +624,106 @@ msgid "Invalid two-factor authentication token."
 msgstr ""
 
 #: judge/forms.py:33
-msgid "Scratch codes must be 16 base32 characters."
+msgid "Scratch codes must be 16 Base32 characters."
 msgstr ""
 
-#: judge/forms.py:35 judge/forms.py:264
+#: judge/forms.py:35 judge/forms.py:260
 msgid "Invalid scratch code."
 msgstr ""
 
-#: judge/forms.py:46
+#: judge/forms.py:42
 msgid "Subscribe to contest updates"
 msgstr ""
 
-#: judge/forms.py:47
+#: judge/forms.py:43
 msgid "Enable experimental features"
 msgstr "Activează funcționalitățile experimentale"
 
-#: judge/forms.py:72
+#: judge/forms.py:68
 msgid "You must solve at least one problem before you can update your profile."
 msgstr "Trebuie să rezolvi cel puțin o problemă înainte de a putea să-ți actualizezi profilul."
 
-#: judge/forms.py:81 judge/views/organization.py:147
+#: judge/forms.py:77 judge/views/organization.py:147
 #, python-brace-format
 msgid "You may not be part of more than {count} public organizations."
 msgstr ""
 
-#: judge/forms.py:97
+#: judge/forms.py:93
 msgid "Download comments?"
 msgstr "Descarci comentariile?"
 
-#: judge/forms.py:98
+#: judge/forms.py:94
 msgid "Download submissions?"
 msgstr "Descarci submisiile?"
 
-#: judge/forms.py:99
+#: judge/forms.py:95
 msgid "Filter by problem code glob:"
 msgstr ""
 
-#: judge/forms.py:103
+#: judge/forms.py:99
 msgid "Leave empty to include all submissions"
 msgstr ""
 
-#: judge/forms.py:106 templates/problem/manage_submission.html:142
+#: judge/forms.py:102 templates/problem/manage_submission.html:142
 msgid "Filter by result:"
 msgstr "Filtrează după rezultat:"
 
-#: judge/forms.py:112
+#: judge/forms.py:108
 msgid "Please select at least one thing to download."
 msgstr ""
 
-#: judge/forms.py:138
+#: judge/forms.py:134
 msgid "Any judge"
 msgstr "Orice evaluator"
 
-#: judge/forms.py:159 judge/views/register.py:25
-#: templates/registration/registration_form.html:137
+#: judge/forms.py:155 judge/views/register.py:25
+#: templates/registration/registration_form.html:143
 #: templates/user/base-users-table.html:5
 msgid "Username"
 msgstr "Nume de utilizator"
 
-#: judge/forms.py:160 templates/registration/registration_form.html:149
-#: templates/registration/registration_form.html:163
+#: judge/forms.py:156 templates/registration/registration_form.html:155
+#: templates/registration/registration_form.html:169
 msgid "Password"
 msgstr "Parolă"
 
-#: judge/forms.py:192
+#: judge/forms.py:188
 msgid "Invalid code length."
 msgstr ""
 
-#: judge/forms.py:223
+#: judge/forms.py:219
 msgid "Invalid WebAuthn response."
 msgstr ""
 
-#: judge/forms.py:226
+#: judge/forms.py:222
 msgid "No WebAuthn challenge issued."
 msgstr ""
 
-#: judge/forms.py:232
+#: judge/forms.py:228
 msgid "Invalid WebAuthn credential ID."
 msgstr ""
 
-#: judge/forms.py:262
+#: judge/forms.py:258
 msgid "Invalid two-factor authentication token or scratch code."
 msgstr ""
 
-#: judge/forms.py:266
+#: judge/forms.py:262
 msgid "Must specify either totp_token or webauthn_response."
 msgstr ""
 
-#: judge/forms.py:270 judge/models/problem.py:120
+#: judge/forms.py:266 judge/models/problem.py:120
 msgid "Problem code must be ^[a-z0-9]+$"
 msgstr "Codul problemei trebuie să fie ^[a-z0-9]+$"
 
-#: judge/forms.py:275
+#: judge/forms.py:271
 msgid "Problem with code already exists."
 msgstr "O problemă cu acest cod există deja."
 
-#: judge/forms.py:280 judge/models/contest.py:68
+#: judge/forms.py:276 judge/models/contest.py:68
 msgid "Contest id must be ^[a-z0-9]+$"
 msgstr "Identificatorul de concurs trebuie să fie ^[a-z0-9]+$"
 
-#: judge/forms.py:285
+#: judge/forms.py:281
 msgid "Contest with key already exists."
 msgstr "Un concurs cu această cheie există deja."
 
@@ -796,7 +806,7 @@ msgid "comments"
 msgstr "comentarii"
 
 #: judge/models/comment.py:89 judge/models/comment.py:141
-#: judge/models/problem.py:525
+#: judge/models/problem.py:523
 #, python-format
 msgid "Editorial for %s"
 msgstr "Editorial pentru %s"
@@ -879,7 +889,7 @@ msgid "contest name"
 msgstr "nume concurs"
 
 #: judge/models/contest.py:70 judge/models/interface.py:67
-#: judge/models/problem.py:514
+#: judge/models/problem.py:512
 msgid "authors"
 msgstr "autori"
 
@@ -887,7 +897,7 @@ msgstr "autori"
 msgid "These users will be able to edit the contest."
 msgstr "Acești utilizatori vor putea edita concursul."
 
-#: judge/models/contest.py:73 judge/models/problem.py:130
+#: judge/models/contest.py:73 judge/models/problem.py:128
 msgid "curators"
 msgstr "curatori"
 
@@ -895,7 +905,7 @@ msgstr "curatori"
 msgid "These users will be able to edit the contest, but will not be listed as authors."
 msgstr "Acești utilizatori vor putea edita concursul, dar nu vor fi listați ca autori."
 
-#: judge/models/contest.py:77 judge/models/problem.py:133
+#: judge/models/contest.py:77 judge/models/problem.py:131
 msgid "testers"
 msgstr ""
 
@@ -931,7 +941,7 @@ msgstr "Acești utilizatori vor putea urmări concursul, dar nu vor vedea proble
 msgid "description"
 msgstr "descriere"
 
-#: judge/models/contest.py:89 judge/models/problem.py:467
+#: judge/models/contest.py:89 judge/models/problem.py:465
 #: judge/models/runtime.py:139
 msgid "problems"
 msgstr "probleme"
@@ -944,12 +954,12 @@ msgstr "timp de început"
 msgid "end time"
 msgstr "timp de sfârșit"
 
-#: judge/models/contest.py:92 judge/models/problem.py:141
-#: judge/models/problem.py:496
+#: judge/models/contest.py:92 judge/models/problem.py:138
+#: judge/models/problem.py:494
 msgid "time limit"
 msgstr "limită de timp"
 
-#: judge/models/contest.py:93 judge/models/problem.py:159
+#: judge/models/contest.py:93 judge/models/problem.py:156
 msgid "publicly visible"
 msgstr "vizibil public"
 
@@ -986,7 +996,7 @@ msgid "scoreboard visibility"
 msgstr ""
 
 #: judge/models/contest.py:107
-msgid "Scoreboard visibility through the duration of the contest"
+msgid "Scoreboard visibility through the duration of the contest."
 msgstr ""
 
 #: judge/models/contest.py:109
@@ -1001,85 +1011,85 @@ msgstr ""
 msgid "rating floor"
 msgstr ""
 
-#: judge/models/contest.py:112
-msgid "Rating floor for contest"
+#: judge/models/contest.py:113
+msgid "Do not rate users who have a lower rating."
 msgstr ""
 
 #: judge/models/contest.py:114
 msgid "rating ceiling"
 msgstr ""
 
-#: judge/models/contest.py:114
-msgid "Rating ceiling for contest"
+#: judge/models/contest.py:115
+msgid "Do not rate users who have a higher rating."
 msgstr ""
 
-#: judge/models/contest.py:116
+#: judge/models/contest.py:117
 msgid "rate all"
 msgstr ""
 
-#: judge/models/contest.py:116
-msgid "Rate all users who joined."
-msgstr "Evaluează toţi utilizatorii care s-au inscris."
-
 #: judge/models/contest.py:117
+msgid "Rate all users who joined."
+msgstr "Evaluează toți utilizatorii care s-au înscris."
+
+#: judge/models/contest.py:118
 msgid "exclude from ratings"
 msgstr ""
 
-#: judge/models/contest.py:119
+#: judge/models/contest.py:120
 msgid "private to specific users"
 msgstr ""
 
-#: judge/models/contest.py:120
+#: judge/models/contest.py:121
 msgid "private contestants"
 msgstr ""
 
-#: judge/models/contest.py:121
-msgid "If non-empty, only these users may see the contest"
-msgstr ""
-
-#: judge/models/contest.py:123
-msgid "hide problem tags"
+#: judge/models/contest.py:122
+msgid "If non-empty, only these users may see the contest."
 msgstr ""
 
 #: judge/models/contest.py:124
+msgid "hide problem tags"
+msgstr ""
+
+#: judge/models/contest.py:125
 msgid "Whether problem tags should be hidden by default."
 msgstr ""
 
-#: judge/models/contest.py:126
+#: judge/models/contest.py:127
 msgid "hide problem authors"
 msgstr ""
 
-#: judge/models/contest.py:127
+#: judge/models/contest.py:128
 msgid "Whether problem authors should be hidden by default."
 msgstr ""
 
-#: judge/models/contest.py:129
+#: judge/models/contest.py:130
 msgid "run pretests only"
 msgstr ""
 
-#: judge/models/contest.py:130
+#: judge/models/contest.py:131
 msgid "Whether judges should grade pretests only, versus all testcases. Commonly set during a contest, then unset prior to rejudging user submissions when the contest ends."
 msgstr ""
 
-#: judge/models/contest.py:134
+#: judge/models/contest.py:135
 msgid "show short form settings display"
 msgstr ""
 
-#: judge/models/contest.py:135
+#: judge/models/contest.py:136
 msgid "Whether to show a section containing contest settings on the contest page or not."
 msgstr ""
 
-#: judge/models/contest.py:138 judge/models/problem.py:184
+#: judge/models/contest.py:139 judge/models/problem.py:182
 msgid "private to organizations"
 msgstr "privat pentru organizații"
 
-#: judge/models/contest.py:139 judge/models/problem.py:182
+#: judge/models/contest.py:140 judge/models/problem.py:180
 #: judge/models/profile.py:99
 msgid "organizations"
 msgstr "organizații"
 
-#: judge/models/contest.py:140
-msgid "If non-empty, only these organizations may see the contest"
+#: judge/models/contest.py:141
+msgid "If non-empty, only these organizations may see the contest."
 msgstr ""
 
 #: judge/models/contest.py:142
@@ -1091,7 +1101,7 @@ msgid "join organizations"
 msgstr ""
 
 #: judge/models/contest.py:144
-msgid "If non-empty, only these organizations may join the contest"
+msgid "If non-empty, only these organizations may join the contest."
 msgstr ""
 
 #: judge/models/contest.py:146 judge/models/profile.py:143
@@ -1099,16 +1109,16 @@ msgid "classes"
 msgstr "clase"
 
 #: judge/models/contest.py:147
-msgid "If organization private, only these classes may see the contest"
+msgid "If organization private, only these classes may see the contest."
 msgstr ""
 
-#: judge/models/contest.py:148 judge/models/problem.py:168
+#: judge/models/contest.py:148 judge/models/problem.py:166
 msgid "OpenGraph image"
 msgstr "Imagine OpenGraph"
 
 #: judge/models/contest.py:149 judge/models/profile.py:58
-msgid "Logo override image"
-msgstr "Imagine suprascriere logo"
+msgid "logo override image"
+msgstr "imagine suprascriere logo"
 
 #: judge/models/contest.py:151
 msgid "This image will replace the default site logo for users inside the contest."
@@ -1122,7 +1132,7 @@ msgstr ""
 msgid "contest summary"
 msgstr "rezumat concurs"
 
-#: judge/models/contest.py:156 judge/models/problem.py:170
+#: judge/models/contest.py:156 judge/models/problem.py:168
 msgid "Plain-text, shown in meta description tag, e.g. for social media."
 msgstr ""
 
@@ -1135,7 +1145,7 @@ msgstr "cod de acces"
 msgid "An optional code to prompt contestants before they are allowed to join the contest. Leave it blank to disable."
 msgstr "Un cod opțional cerut concurențiilor înainte de a se putea alătura concursului. Lasă necompletat pentru a dezactiva."
 
-#: judge/models/contest.py:160 judge/models/problem.py:164
+#: judge/models/contest.py:160 judge/models/problem.py:162
 msgid "personae non gratae"
 msgstr "persoane non-grata"
 
@@ -1297,14 +1307,14 @@ msgid "contest participations"
 msgstr "participările la concurs"
 
 #: judge/models/contest.py:583 judge/models/contest.py:608
-#: judge/models/contest.py:648 judge/models/problem.py:466
-#: judge/models/problem.py:471 judge/models/problem.py:494
+#: judge/models/contest.py:648 judge/models/problem.py:464
+#: judge/models/problem.py:469 judge/models/problem.py:492
 #: judge/models/problem_data.py:35 judge/models/submission.py:68
 msgid "problem"
 msgstr "problemă"
 
 #: judge/models/contest.py:585 judge/models/contest.py:612
-#: judge/models/problem.py:152
+#: judge/models/problem.py:149
 msgid "points"
 msgstr "puncte"
 
@@ -1400,6 +1410,14 @@ msgstr ""
 msgid "contest moss results"
 msgstr ""
 
+#: judge/models/interface.py:17 judge/models/problem.py:61
+msgid "key"
+msgstr ""
+
+#: judge/models/interface.py:18
+msgid "value"
+msgstr "valoare"
+
 #: judge/models/interface.py:24
 msgid "configuration item"
 msgstr "element de configurare"
@@ -1440,7 +1458,7 @@ msgstr ""
 msgid "slug"
 msgstr ""
 
-#: judge/models/interface.py:69 judge/models/problem.py:512
+#: judge/models/interface.py:69 judge/models/problem.py:510
 msgid "public visibility"
 msgstr ""
 
@@ -1497,7 +1515,7 @@ msgstr ""
 msgid "problem type"
 msgstr "tipul problemei"
 
-#: judge/models/problem.py:44 judge/models/problem.py:136
+#: judge/models/problem.py:44 judge/models/problem.py:134
 msgid "problem types"
 msgstr "tipurile problemei"
 
@@ -1509,17 +1527,13 @@ msgstr ""
 msgid "problem group name"
 msgstr ""
 
-#: judge/models/problem.py:56 judge/models/problem.py:139
+#: judge/models/problem.py:56 judge/models/problem.py:136
 msgid "problem group"
 msgstr "grupul problemei"
 
 #: judge/models/problem.py:57
 msgid "problem groups"
 msgstr "grupurile problemei"
-
-#: judge/models/problem.py:61
-msgid "key"
-msgstr ""
 
 #: judge/models/problem.py:63
 msgid "link"
@@ -1535,22 +1549,22 @@ msgid "short name"
 msgstr ""
 
 #: judge/models/problem.py:66
-msgid "Displayed on pages under this license"
-msgstr "Afişat pe paginile sub această licenţă"
+msgid "Displayed on pages under this license."
+msgstr "Afișat pe paginile sub această licență."
 
 #: judge/models/problem.py:67
 msgid "icon"
 msgstr "pictogramă"
 
 #: judge/models/problem.py:67
-msgid "URL to the icon"
-msgstr "Hyperlink către icon"
+msgid "URL to the icon."
+msgstr "Hyperlink către icon."
 
 #: judge/models/problem.py:68
 msgid "license text"
 msgstr ""
 
-#: judge/models/problem.py:77 judge/models/problem.py:166
+#: judge/models/problem.py:77 judge/models/problem.py:164
 msgid "license"
 msgstr "licență"
 
@@ -1579,237 +1593,237 @@ msgid "problem code"
 msgstr "codul problemei"
 
 #: judge/models/problem.py:121
-msgid "A short, unique code for the problem, used in the url after /problem/"
+msgid "A short, unique code for the problem, used in the URL after /problem/"
 msgstr ""
 
-#: judge/models/problem.py:123
+#: judge/models/problem.py:122
 msgid "problem name"
 msgstr "numele problemei"
 
-#: judge/models/problem.py:124
+#: judge/models/problem.py:123
 msgid "The full name of the problem, as shown in the problem list."
 msgstr ""
 
-#: judge/models/problem.py:126
+#: judge/models/problem.py:124
 msgid "problem body"
 msgstr ""
 
-#: judge/models/problem.py:127
+#: judge/models/problem.py:125
 msgid "creators"
 msgstr "creatori"
 
-#: judge/models/problem.py:128
+#: judge/models/problem.py:126
 msgid "These users will be able to edit the problem, and be listed as authors."
 msgstr "Acești utilizatori vor putea edita problema și vor fi listați ca autori."
 
-#: judge/models/problem.py:131
+#: judge/models/problem.py:129
 msgid "These users will be able to edit the problem, but not be listed as authors."
 msgstr "Acești utilizatori vor putea edita problema, dar nu vor fi listați ca autori."
 
-#: judge/models/problem.py:135
+#: judge/models/problem.py:133
 msgid "These users will be able to view the private problem, but not edit it."
 msgstr ""
 
-#: judge/models/problem.py:137
+#: judge/models/problem.py:135
 msgid "The type of problem, as shown on the problem's page."
 msgstr "Tipul problemei, așa cum va fi afișat pe pagina problemei."
 
-#: judge/models/problem.py:140
+#: judge/models/problem.py:137
 msgid "The group of problem, shown under Category in the problem list."
 msgstr "Grupul problemei, va fi afișat sub „Categorie” în lista de probleme."
 
-#: judge/models/problem.py:142
+#: judge/models/problem.py:139
 msgid "The time limit for this problem, in seconds. Fractional seconds (e.g. 1.5) are supported."
 msgstr ""
 
-#: judge/models/problem.py:146 judge/models/problem.py:499
+#: judge/models/problem.py:143 judge/models/problem.py:497
 msgid "memory limit"
 msgstr "limită de memorie"
 
-#: judge/models/problem.py:147
-msgid "The memory limit for this problem, in kilobytes (e.g. 64mb = 65536 kilobytes)."
+#: judge/models/problem.py:144
+msgid "The memory limit for this problem, in kilobytes (e.g. 256mb = 262144 kilobytes)."
 msgstr ""
 
-#: judge/models/problem.py:151
+#: judge/models/problem.py:148
 msgid "short circuit"
 msgstr ""
 
-#: judge/models/problem.py:153
+#: judge/models/problem.py:150
 msgid "Points awarded for problem completion. Points are displayed with a 'p' suffix if partial."
 msgstr ""
 
-#: judge/models/problem.py:156
+#: judge/models/problem.py:153
 msgid "allows partial points"
 msgstr "se acordă punctaje parțiale"
 
-#: judge/models/problem.py:157
+#: judge/models/problem.py:154
 msgid "allowed languages"
 msgstr "limbaje permise"
 
-#: judge/models/problem.py:158
+#: judge/models/problem.py:155
 msgid "List of allowed submission languages."
 msgstr ""
 
-#: judge/models/problem.py:160
+#: judge/models/problem.py:157
 msgid "manually managed"
 msgstr ""
 
-#: judge/models/problem.py:161
+#: judge/models/problem.py:158
 msgid "Whether judges should be allowed to manage data or not."
 msgstr ""
 
-#: judge/models/problem.py:162
+#: judge/models/problem.py:159
 msgid "date of publishing"
 msgstr "data publicării"
 
-#: judge/models/problem.py:163
-msgid "Doesn't have magic ability to auto-publish due to backward compatibility"
+#: judge/models/problem.py:161
+msgid "Doesn't have the magic ability to auto-publish due to backward compatibility."
 msgstr ""
 
-#: judge/models/problem.py:165
+#: judge/models/problem.py:163
 msgid "Bans the selected users from submitting to this problem."
 msgstr ""
 
-#: judge/models/problem.py:167
+#: judge/models/problem.py:165
 msgid "The license under which this problem is published."
 msgstr "Licența sub care este publicată această problemă."
 
-#: judge/models/problem.py:169
+#: judge/models/problem.py:167
 msgid "problem summary"
 msgstr "rezumatul problemei"
 
-#: judge/models/problem.py:171
+#: judge/models/problem.py:169
 msgid "number of users"
 msgstr ""
 
-#: judge/models/problem.py:172
+#: judge/models/problem.py:170
 msgid "The number of users who solved the problem."
 msgstr ""
 
-#: judge/models/problem.py:173
+#: judge/models/problem.py:171
 msgid "solve rate"
 msgstr ""
 
-#: judge/models/problem.py:174
+#: judge/models/problem.py:172
 msgid "allow full markdown access"
 msgstr ""
 
-#: judge/models/problem.py:175
+#: judge/models/problem.py:173
 msgid "submission source visibility"
 msgstr ""
 
-#: judge/models/problem.py:183
+#: judge/models/problem.py:181
 msgid "If private, only these organizations may see the problem."
 msgstr ""
 
-#: judge/models/problem.py:456
+#: judge/models/problem.py:454
 msgid "See hidden problems"
 msgstr ""
 
-#: judge/models/problem.py:457
+#: judge/models/problem.py:455
 msgid "Edit own problems"
 msgstr ""
 
-#: judge/models/problem.py:458
+#: judge/models/problem.py:456
 msgid "Edit all problems"
 msgstr ""
 
-#: judge/models/problem.py:459
+#: judge/models/problem.py:457
 msgid "Edit all public problems"
 msgstr ""
 
-#: judge/models/problem.py:460
+#: judge/models/problem.py:458
 msgid "Edit problems with full markup"
 msgstr ""
 
-#: judge/models/problem.py:461 templates/problem/problem.html:161
+#: judge/models/problem.py:459 templates/problem/problem.html:161
 msgid "Clone problem"
 msgstr "Duplică problemă"
 
-#: judge/models/problem.py:462
+#: judge/models/problem.py:460
 msgid "Change is_public field"
 msgstr ""
 
-#: judge/models/problem.py:463
+#: judge/models/problem.py:461
 msgid "Change is_manually_managed field"
 msgstr ""
 
-#: judge/models/problem.py:464
+#: judge/models/problem.py:462
 msgid "See organization-private problems"
 msgstr ""
 
-#: judge/models/problem.py:472 judge/models/problem.py:495
+#: judge/models/problem.py:470 judge/models/problem.py:493
 #: judge/models/runtime.py:111
 msgid "language"
 msgstr "limbaj"
 
-#: judge/models/problem.py:473
+#: judge/models/problem.py:471
 msgid "translated name"
 msgstr ""
 
-#: judge/models/problem.py:474
+#: judge/models/problem.py:472
 msgid "translated description"
 msgstr ""
 
-#: judge/models/problem.py:479
+#: judge/models/problem.py:477
 msgid "problem translation"
 msgstr ""
 
-#: judge/models/problem.py:480
+#: judge/models/problem.py:478
 msgid "problem translations"
 msgstr ""
 
-#: judge/models/problem.py:484
+#: judge/models/problem.py:482
 msgid "clarified problem"
 msgstr ""
 
-#: judge/models/problem.py:485
+#: judge/models/problem.py:483
 msgid "clarification body"
 msgstr ""
 
-#: judge/models/problem.py:486
+#: judge/models/problem.py:484
 msgid "clarification timestamp"
 msgstr ""
 
-#: judge/models/problem.py:489
+#: judge/models/problem.py:487
 msgid "problem clarification"
 msgstr ""
 
-#: judge/models/problem.py:490
+#: judge/models/problem.py:488
 msgid "problem clarifications"
 msgstr ""
 
-#: judge/models/problem.py:505
+#: judge/models/problem.py:503
 msgid "language-specific resource limit"
 msgstr "limita de resurse specifică limbii"
 
-#: judge/models/problem.py:506
+#: judge/models/problem.py:504
 msgid "language-specific resource limits"
 msgstr "limite de resurse specifică limbii"
 
-#: judge/models/problem.py:510
+#: judge/models/problem.py:508
 msgid "associated problem"
 msgstr ""
 
-#: judge/models/problem.py:513
+#: judge/models/problem.py:511
 msgid "publish date"
 msgstr ""
 
-#: judge/models/problem.py:515
+#: judge/models/problem.py:513
 msgid "editorial content"
 msgstr ""
 
-#: judge/models/problem.py:538
+#: judge/models/problem.py:536
 msgid "See hidden solutions"
 msgstr ""
 
-#: judge/models/problem.py:540
+#: judge/models/problem.py:538
 msgid "solution"
-msgstr "soluţie"
+msgstr "soluție"
 
-#: judge/models/problem.py:541
+#: judge/models/problem.py:539
 msgid "solutions"
-msgstr "soluţii"
+msgstr "soluții"
 
 #: judge/models/problem_data.py:23
 msgid "Standard"
@@ -1872,8 +1886,8 @@ msgid "checker arguments"
 msgstr "argumente verificator"
 
 #: judge/models/problem_data.py:46 judge/models/problem_data.py:94
-msgid "checker arguments as a JSON object"
-msgstr "argumente verificator ca obiect JSON"
+msgid "Checker arguments as a JSON object."
+msgstr "Argumente verificator ca obiect JSON."
 
 #: judge/models/problem_data.py:77
 msgid "problem data set"
@@ -1928,12 +1942,12 @@ msgid "organization slug"
 msgstr "slug organizație"
 
 #: judge/models/profile.py:44
-msgid "Organization name shown in URL"
-msgstr "Numele organizației așa cum apare in URL"
+msgid "Organization name shown in URLs."
+msgstr "Numele organizației așa cum apare in URL."
 
 #: judge/models/profile.py:46
-msgid "Displayed beside user name during contests"
-msgstr "Afişat lângă numele de utilizator în timpul concursurilor"
+msgid "Displayed beside user name during contests."
+msgstr "Afișat lângă numele de utilizator în timpul concursurilor."
 
 #: judge/models/profile.py:47
 msgid "organization description"
@@ -1944,8 +1958,8 @@ msgid "administrators"
 msgstr "administratori"
 
 #: judge/models/profile.py:49
-msgid "Those who can edit this organization"
-msgstr "Cei care pot edita această organizaţie"
+msgid "Those who can edit this organization."
+msgstr "Cei care pot edita această organizație."
 
 #: judge/models/profile.py:50
 msgid "creation date"
@@ -1956,20 +1970,20 @@ msgid "is open organization?"
 msgstr "este o organizație deschisă?"
 
 #: judge/models/profile.py:52
-msgid "Allow joining organization"
-msgstr "Permite aderarea la organizaţie"
+msgid "Allow joining organization."
+msgstr "Permite aderarea la organizație."
 
 #: judge/models/profile.py:53
 msgid "maximum size"
 msgstr "dimensiune maximă"
 
 #: judge/models/profile.py:54
-msgid "Maximum amount of users in this organization, only applicable to private organizations"
-msgstr "Numărul maxim de utilizatori din această organizație, aplicabil numai organizațiilor private"
+msgid "Maximum amount of users in this organization, only applicable to private organizations."
+msgstr "Numărul maxim de utilizatori din această organizație, aplicabil numai organizațiilor private."
 
-#: judge/models/profile.py:56
-msgid "Student access code"
-msgstr "Cod de acces pentru student"
+#: judge/models/profile.py:56 judge/models/profile.py:111
+msgid "Student access code."
+msgstr "Cod de acces pentru student."
 
 #: judge/models/profile.py:60
 msgid "This image will replace the default site logo for users viewing the organization."
@@ -1980,11 +1994,11 @@ msgid "class membership required"
 msgstr ""
 
 #: judge/models/profile.py:63
-msgid "whether members are compelled to select a class when joining"
+msgid "Whether members are compelled to select a class when joining."
 msgstr ""
 
 #: judge/models/profile.py:67
-msgid "Class membership cannot be enforced when organization has open enrollment"
+msgid "Class membership cannot be enforced when organization has open enrollment."
 msgstr ""
 
 #: judge/models/profile.py:95
@@ -2001,7 +2015,7 @@ msgid "organization"
 msgstr "organizație"
 
 #: judge/models/profile.py:104
-msgid "the organization that this class belongs to"
+msgid "The organization that this class belongs to."
 msgstr ""
 
 #: judge/models/profile.py:106
@@ -2013,7 +2027,7 @@ msgid "class slug"
 msgstr ""
 
 #: judge/models/profile.py:107
-msgid "class name shown in URLs"
+msgid "Class name shown in URLs."
 msgstr ""
 
 #: judge/models/profile.py:108
@@ -2024,12 +2038,8 @@ msgstr ""
 msgid "is class active"
 msgstr ""
 
-#: judge/models/profile.py:111
-msgid "student access code"
-msgstr "cod de acces pentru student"
-
 #: judge/models/profile.py:113
-msgid "those who can approve membership to this class"
+msgid "Those who can approve membership to this class."
 msgstr ""
 
 #: judge/models/profile.py:114
@@ -2054,8 +2064,8 @@ msgid "self-description"
 msgstr "auto-descriere"
 
 #: judge/models/profile.py:150
-msgid "location"
-msgstr ""
+msgid "time zone"
+msgstr "fus orar"
 
 #: judge/models/profile.py:152
 msgid "preferred language"
@@ -2128,7 +2138,7 @@ msgid "math engine"
 msgstr "motor de matematică"
 
 #: judge/models/profile.py:178
-msgid "the rendering engine used to render math"
+msgid "The rendering engine used to render math."
 msgstr ""
 
 #: judge/models/profile.py:179
@@ -2136,7 +2146,7 @@ msgid "TOTP 2FA enabled"
 msgstr ""
 
 #: judge/models/profile.py:180
-msgid "check to enable TOTP-based two-factor authentication"
+msgid "Check to enable TOTP-based two-factor authentication."
 msgstr ""
 
 #: judge/models/profile.py:181
@@ -2144,7 +2154,7 @@ msgid "WebAuthn 2FA enabled"
 msgstr ""
 
 #: judge/models/profile.py:182
-msgid "check to enable WebAuthn-based two-factor authentication"
+msgid "Check to enable WebAuthn-based two-factor authentication."
 msgstr ""
 
 #: judge/models/profile.py:183
@@ -2152,11 +2162,11 @@ msgid "TOTP key"
 msgstr ""
 
 #: judge/models/profile.py:184
-msgid "32 character base32-encoded key for TOTP"
+msgid "32-character Base32-encoded key for TOTP."
 msgstr ""
 
 #: judge/models/profile.py:186
-msgid "TOTP key must be empty or base32"
+msgid "TOTP key must be empty or Base32."
 msgstr ""
 
 #: judge/models/profile.py:187
@@ -2164,11 +2174,11 @@ msgid "scratch codes"
 msgstr ""
 
 #: judge/models/profile.py:188
-msgid "JSON array of 16 character base32-encoded codes for scratch codes"
+msgid "JSON array of 16-character Base32-encoded codes for scratch codes."
 msgstr ""
 
 #: judge/models/profile.py:192
-msgid "Scratch codes must be empty or a JSON array of 16-character base32 codes"
+msgid "Scratch codes must be empty or a JSON array of 16-character Base32 codes."
 msgstr ""
 
 #: judge/models/profile.py:194
@@ -2180,7 +2190,7 @@ msgid "API token"
 msgstr ""
 
 #: judge/models/profile.py:196
-msgid "64 character hex-encoded API access token"
+msgid "64-character hex-encoded API access token."
 msgstr ""
 
 #: judge/models/profile.py:198
@@ -2204,7 +2214,7 @@ msgid "display name override"
 msgstr ""
 
 #: judge/models/profile.py:203
-msgid "name displayed in place of username"
+msgid "Name displayed in place of username."
 msgstr ""
 
 #: judge/models/profile.py:317
@@ -2260,17 +2270,29 @@ msgstr ""
 msgid "state"
 msgstr "stare"
 
+#: judge/models/profile.py:361 templates/organization/requests/tabs.html:4
+msgid "Pending"
+msgstr "Nehotărât"
+
+#: judge/models/profile.py:362 templates/organization/requests/tabs.html:10
+msgid "Approved"
+msgstr "Aprobat"
+
+#: judge/models/profile.py:363 templates/organization/requests/tabs.html:13
+msgid "Rejected"
+msgstr "Respins"
+
 #: judge/models/profile.py:366
 msgid "reason"
 msgstr "motiv"
 
 #: judge/models/profile.py:375
 msgid "organization join request"
-msgstr "cerere de a se alătura organizaţiei"
+msgstr "cerere de a se alătura organizației"
 
 #: judge/models/profile.py:376
 msgid "organization join requests"
-msgstr "cereri de a se alătura organizaţiei"
+msgstr "cereri de a se alătura organizației"
 
 #: judge/models/runtime.py:19
 msgid "short identifier"
@@ -2297,7 +2319,7 @@ msgid "common name"
 msgstr ""
 
 #: judge/models/runtime.py:30
-msgid "Common name for the language. For example, the common name for C++03, C++11, and C++14 would be \"C++\""
+msgid "Common name for the language. For example, the common name for C++03, C++11, and C++14 would be \"C++\"."
 msgstr ""
 
 #: judge/models/runtime.py:32
@@ -2377,16 +2399,16 @@ msgid "judge name"
 msgstr ""
 
 #: judge/models/runtime.py:124
-msgid "Server name, hostname-style"
-msgstr "Numele server-ului, in stil de hostname"
+msgid "Server name, hostname-style."
+msgstr "Numele server-ului, in stil de hostname."
 
 #: judge/models/runtime.py:126
 msgid "time of creation"
 msgstr ""
 
 #: judge/models/runtime.py:127
-msgid "A key to authenticate this judge"
-msgstr "O cheie de autentificare pentru acest judge"
+msgid "A key to authenticate this judge."
+msgstr "O cheie de autentificare pentru acest judge."
 
 #: judge/models/runtime.py:128
 msgid "authentication key"
@@ -2418,7 +2440,7 @@ msgstr ""
 
 #: judge/models/runtime.py:136
 msgid "Load for the last minute, divided by processors to be fair."
-msgstr "Încărcarea in ultimul minut, împărţită la numarul de procesoare."
+msgstr "Încărcarea in ultimul minut, împărțită la numărul de procesoare."
 
 #: judge/models/runtime.py:138
 msgid "last connected IP"
@@ -2842,7 +2864,7 @@ msgstr "Eroare"
 
 #: judge/utils/problems.py:89
 msgid "Can't pass both queryset and keyword filters"
-msgstr "Nu se poate trece amândoua queryset şi filtrele cu cuvinte cheie"
+msgstr "Nu se poate trece amândoua queryset și filtrele cu cuvinte cheie"
 
 #: judge/utils/pwned.py:109
 msgid "This password is too common."
@@ -2953,12 +2975,12 @@ msgstr ""
 
 #: judge/views/contests.py:353
 msgid "Contest not ongoing"
-msgstr "Concursul nu este în curs de desfăşurare"
+msgstr "Concursul nu este în curs de desfășurare"
 
 #: judge/views/contests.py:354
 #, python-format
 msgid "\"%s\" is not currently ongoing."
-msgstr "Momentan, \"%s\" nu este în curs de desfăşurare."
+msgstr "Momentan, \"%s\" nu este în curs de desfășurare."
 
 #: judge/views/contests.py:359
 msgid "Banned from joining"
@@ -2984,7 +3006,7 @@ msgstr ""
 #: judge/views/contests.py:440
 #, python-format
 msgid "You are not in contest \"%s\"."
-msgstr "Nu sunteţi în concursul \"%s\"."
+msgstr "Nu sunteți în concursul \"%s\"."
 
 #: judge/views/contests.py:459
 msgid "ContestCalendar requires integer year and month"
@@ -3072,21 +3094,21 @@ msgstr "Limbaje"
 
 #: judge/views/organization.py:52 judge/views/organization.py:55
 msgid "No such organization"
-msgstr "Nicio organizaţie de acest fel"
+msgstr "Nicio organizație de acest fel"
 
 #: judge/views/organization.py:53
 #, python-format
 msgid "Could not find an organization with the key \"%s\"."
-msgstr "Nicio organizaţie găsită cu cheia \"%s\"."
+msgstr "Nicio organizație găsită cu cheia \"%s\"."
 
 #: judge/views/organization.py:56
 msgid "Could not find such organization."
-msgstr "Nu am putut găsi organizaţii de acest fel."
+msgstr "Nu am putut găsi organizații de acest fel."
 
 #: judge/views/organization.py:81 judge/views/register.py:33
 #: templates/user/user-list-tabs.html:5
 msgid "Organizations"
-msgstr "Organizaţii"
+msgstr "Organizații"
 
 #: judge/views/organization.py:115
 #, python-format
@@ -3096,24 +3118,24 @@ msgstr "%s Membri"
 #: judge/views/organization.py:138 judge/views/organization.py:141
 #: judge/views/organization.py:146
 msgid "Joining organization"
-msgstr "Aderarea la organizaţie"
+msgstr "Aderarea la organizație"
 
 #: judge/views/organization.py:138
 msgid "You are already in the organization."
-msgstr "Sunteţi deja în organizaţie."
+msgstr "Sunteți deja în organizație."
 
 #: judge/views/organization.py:141
 msgid "This organization is not open."
-msgstr "Această organizaţie nu este deschisă."
+msgstr "Această organizație nu este deschisă."
 
 #: judge/views/organization.py:158
 msgid "Leaving organization"
-msgstr "Părăsire organizaţie"
+msgstr "Părăsire organizație"
 
 #: judge/views/organization.py:158
 #, python-format
 msgid "You are not in \"%s\"."
-msgstr "Nu sunteţi în \"%s\"."
+msgstr "Nu sunteți în \"%s\"."
 
 #: judge/views/organization.py:185 judge/views/organization.py:438
 #, python-format
@@ -3167,11 +3189,11 @@ msgstr "Editare %s"
 
 #: judge/views/organization.py:358 judge/views/organization.py:366
 msgid "Can't edit organization"
-msgstr "Nu puteţi edita organizaţia"
+msgstr "Nu puteți edita organizația"
 
 #: judge/views/organization.py:359
 msgid "You are not allowed to edit this organization."
-msgstr "Nu aveţi permisiunea pentru a edita această organizaţie."
+msgstr "Nu aveți permisiunea pentru a edita această organizație."
 
 #: judge/views/organization.py:367
 msgid "You are not allowed to kick people from this organization."
@@ -3187,7 +3209,7 @@ msgstr ""
 
 #: judge/views/organization.py:377
 #, python-format
-msgid "The user you are trying to kick is not in organization: %s."
+msgid "The user you are trying to kick is not in organization: %s"
 msgstr ""
 
 #: judge/views/organization.py:410
@@ -3227,11 +3249,6 @@ msgstr ""
 #, python-format
 msgid "Could not find an editorial with the code \"%s\"."
 msgstr ""
-
-#: judge/views/problem.py:271 templates/contest/contest.html:191
-#: templates/user/user-tabs.html:5 templates/user/users-table.html:23
-msgid "Problems"
-msgstr "Probleme"
 
 #: judge/views/problem.py:568 judge/views/problem.py:576
 #, python-format
@@ -3321,12 +3338,12 @@ msgstr[2] ""
 #: judge/views/ranked_submission.py:68 judge/views/ranked_submission.py:71
 #, python-format
 msgid "Best solutions for %s"
-msgstr "Cele mai bune soluţii pentru %s"
+msgstr "Cele mai bune soluții pentru %s"
 
 #: judge/views/ranked_submission.py:85 judge/views/ranked_submission.py:94
 #, python-format
 msgid "Best solutions for %(problem)s in %(contest)s"
-msgstr "Cele mai bune soluţii pentru %(problem)s în %(contest)s"
+msgstr "Cele mai bune soluții pentru %(problem)s în %(contest)s"
 
 #: judge/views/ranked_submission.py:88 judge/views/ranked_submission.py:100
 #, python-format
@@ -3335,7 +3352,7 @@ msgstr ""
 
 #: judge/views/register.py:26
 msgid "A username must contain letters, numbers, or underscores"
-msgstr "Numele de utilizator trebuie să conţină litere, numere sau caractere de subliniere"
+msgstr "Numele de utilizator trebuie să conțină litere, numere sau caractere de subliniere"
 
 #: judge/views/register.py:30
 msgid "Preferred language"
@@ -3352,7 +3369,7 @@ msgstr "Adresa de email \"%s\" a fost deja folosită. O singură înregistrare e
 
 #: judge/views/register.py:50
 msgid "Your email provider is not allowed due to history of abuse. Please use a reputable email provider."
-msgstr "Furnizorul dvs. de e-mail nu este permis datorită istoriei de abuz. Vă rugăm să folosiţi un furnizor de e-mail respectabil."
+msgstr "Furnizorul dvs. de e-mail nu este permis datorită istoriei de abuz. Vă rugăm să folosiți un furnizor de e-mail respectabil."
 
 #: judge/views/register.py:56
 msgid "Register"
@@ -3398,12 +3415,12 @@ msgstr "Permisiune refuzată."
 #: judge/views/submission.py:81 judge/views/submission.py:88
 #, python-format
 msgid "Submission of %(problem)s by %(user)s"
-msgstr "Soluţia problemei %(problem)s de %(user)s"
+msgstr "Soluția problemei %(problem)s de %(user)s"
 
 #: judge/views/submission.py:231 judge/views/submission.py:232
 #: templates/problem/problem.html:127
 msgid "All submissions"
-msgstr "Toate soluţile"
+msgstr "Toate soluțiile"
 
 #: judge/views/submission.py:391 judge/views/submission.py:396
 msgid "All my submissions"
@@ -3412,16 +3429,16 @@ msgstr ""
 #: judge/views/submission.py:392 judge/views/submission.py:397
 #, python-format
 msgid "All submissions by %s"
-msgstr "Toate soluţiile submise de %s"
+msgstr "Toate soluțiile submise de %s"
 
 #: judge/views/submission.py:425 judge/views/submission.py:428
 #, python-format
 msgid "All submissions for %s"
-msgstr "Toate soluţiile pentru %s"
+msgstr "Toate soluțiile pentru %s"
 
 #: judge/views/submission.py:450
 msgid "Must pass a problem"
-msgstr "Trebuie să rezolvaţi o problemă"
+msgstr "Trebuie să rezolvați o problemă"
 
 #: judge/views/submission.py:489 judge/views/submission.py:496
 #, python-format
@@ -3431,11 +3448,11 @@ msgstr ""
 #: judge/views/submission.py:490 judge/views/submission.py:500
 #, python-format
 msgid "%(user)s's submissions for %(problem)s"
-msgstr "Soluţiile lui %(user)s pentru %(problem)s"
+msgstr "Soluțiile lui %(user)s pentru %(problem)s"
 
 #: judge/views/submission.py:592
 msgid "Must pass a contest"
-msgstr "Trebuie să completaţi un concurs"
+msgstr "Trebuie să completați un concurs"
 
 #: judge/views/submission.py:600 judge/views/submission.py:615
 #, python-format
@@ -3450,7 +3467,7 @@ msgstr ""
 #: judge/views/submission.py:637 judge/views/submission.py:655
 #, python-brace-format
 msgid "{user}'s submissions for {problem} in {contest}"
-msgstr "Soluţiile lui {user} pentru {problem} în {contest}"
+msgstr "Soluțiile lui {user} pentru {problem} în {contest}"
 
 #: judge/views/submission.py:642 judge/views/submission.py:663
 #, python-brace-format
@@ -3565,7 +3582,7 @@ msgstr "j M Y, \\o\\r\\a G:i"
 msgid "Preparing your data..."
 msgstr ""
 
-#: judge/views/user.py:308 templates/user/edit-profile.html:352
+#: judge/views/user.py:308 templates/user/edit-profile.html:346
 msgid "Download your data"
 msgstr ""
 
@@ -3599,14 +3616,9 @@ msgstr ""
 msgid "You have been successfully logged out."
 msgstr ""
 
-#: judge/views/widgets.py:52 judge/views/widgets.py:62
-#, python-format
-msgid "Invalid upstream data: %s"
-msgstr "Informațiile trimise sunt invalide: %s"
-
-#: judge/views/widgets.py:72
-msgid "Bad latitude or longitude"
-msgstr "Latitudine sau longitudine nepotrivită"
+#: judge/views/user.py:518
+msgid "You have sent too many password reset requests. Please try again later."
+msgstr ""
 
 #: templates/admin/judge/contest/change_form.html:9
 msgid "Are you sure you want to rejudge ALL the submissions?"
@@ -3669,7 +3681,7 @@ msgstr "Log out"
 msgid "Log in"
 msgstr "Autentificare"
 
-#: templates/base.html:237 templates/registration/registration_form.html:175
+#: templates/base.html:237 templates/registration/registration_form.html:181
 msgid "or"
 msgstr "sau"
 
@@ -3736,9 +3748,19 @@ msgstr ""
 msgid "Ongoing contests"
 msgstr "Concursuri in desfășurare"
 
+#: templates/blog/list.html:163
+#, python-format
+msgid "Ends in %(countdown)s."
+msgstr ""
+
 #: templates/blog/list.html:173
 msgid "Upcoming contests"
 msgstr "Concursuri programate"
+
+#: templates/blog/list.html:181 templates/contest/list.html:257
+#, python-format
+msgid "Starting in %(countdown)s."
+msgstr ""
 
 #: templates/blog/list.html:190
 msgid "Comment stream"
@@ -3756,7 +3778,7 @@ msgstr ""
 msgid "New tickets"
 msgstr ""
 
-#: templates/comments/list.html:2 templates/user/prepare-data.html:97
+#: templates/comments/list.html:2 templates/user/prepare-data.html:98
 msgid "Comments"
 msgstr "Comentarii"
 
@@ -3819,7 +3841,7 @@ msgstr "Comentariu nou"
 msgid "Invalid comment body."
 msgstr "Corpul comentariului nevalid."
 
-#: templates/comments/list.html:159
+#: templates/comments/list.html:159 templates/ticket/ticket.html:356
 msgid "Post!"
 msgstr "Postează!"
 
@@ -3850,6 +3872,18 @@ msgstr "Scor"
 
 #: templates/comments/votes.html:17
 msgid "No votes"
+msgstr ""
+
+#: templates/common-content.html:34 templates/user/edit-profile.html:219
+msgid "Click to copy"
+msgstr ""
+
+#: templates/common-content.html:35 templates/user/edit-profile.html:220
+msgid "Copy"
+msgstr ""
+
+#: templates/common-content.html:46 templates/user/edit-profile.html:231
+msgid "Copied!"
 msgstr ""
 
 #: templates/contest/access_code.html:26
@@ -3954,7 +3988,7 @@ msgstr "Clonează"
 msgid "Leave contest"
 msgstr "Părăsiți concursul"
 
-#: templates/contest/contest-tabs.html:45 templates/contest/list.html:306
+#: templates/contest/contest-tabs.html:45 templates/contest/list.html:308
 msgid "Virtual join"
 msgstr "Alătură-te virtual"
 
@@ -3971,7 +4005,7 @@ msgstr "Intră în concurs"
 msgid "Spectate contest"
 msgstr ""
 
-#: templates/contest/contest-tabs.html:80 templates/contest/list.html:149
+#: templates/contest/contest-tabs.html:80 templates/contest/list.html:151
 msgid "You cannot join this contest."
 msgstr "Nu te poți alătura acestui concurs."
 
@@ -3979,13 +4013,43 @@ msgstr "Nu te poți alătura acestui concurs."
 msgid "Log in to participate"
 msgstr "Autentifică-te pentru a putea participa"
 
+#: templates/contest/contest.html:33
+#, python-format
+msgid "Spectating, contest ends in %(countdown)s."
+msgstr ""
+
+#: templates/contest/contest.html:35
+#, python-format
+msgid "Participating virtually, %(countdown)s remaining."
+msgstr ""
+
 #: templates/contest/contest.html:37
 msgid "Participating virtually."
 msgstr "Participă virtual."
 
+#: templates/contest/contest.html:41
+#, python-format
+msgid "Starting in %(countdown)s"
+msgstr ""
+
 #: templates/contest/contest.html:43
 msgid "Contest is over."
 msgstr "Concursul s-a terminat."
+
+#: templates/contest/contest.html:47
+#, python-format
+msgid "Your time is up! Contest ends in %(countdown)s."
+msgstr ""
+
+#: templates/contest/contest.html:49
+#, python-format
+msgid "You have %(countdown)s remaining."
+msgstr ""
+
+#: templates/contest/contest.html:52
+#, python-format
+msgid "Contest ends in %(countdown)s."
+msgstr ""
 
 #: templates/contest/contest.html:58 templates/contest/contest.html:60
 msgid "F j, Y, G:i T"
@@ -4120,8 +4184,8 @@ msgstr "Un **cod de acces este necesar** pentru alăturarea la concurs."
 msgid "AC Rate"
 msgstr ""
 
-#: templates/contest/contest.html:198 templates/contest/list.html:164
-#: templates/contest/list.html:206 templates/contest/list.html:283
+#: templates/contest/contest.html:198 templates/contest/list.html:166
+#: templates/contest/list.html:208 templates/contest/list.html:285
 #: templates/problem/list.html:209 templates/problem/list.html:241
 msgid "Users"
 msgstr "Utilizatori"
@@ -4155,36 +4219,56 @@ msgstr "privat"
 msgid "rated"
 msgstr "evaluat"
 
-#: templates/contest/list.html:137 templates/contest/list.html:149
+#: templates/contest/list.html:116
+#, python-format
+msgid "%(time_limit)s window"
+msgstr "Fereastra de %(time_limit)s"
+
+#: templates/contest/list.html:119
+#, python-format
+msgid "%(duration)s long"
+msgstr ""
+
+#: templates/contest/list.html:139 templates/contest/list.html:151
 msgid "Join"
 msgstr "Intră"
 
-#: templates/contest/list.html:143
+#: templates/contest/list.html:145
 msgid "Spectate"
 msgstr ""
 
-#: templates/contest/list.html:159
+#: templates/contest/list.html:161
 msgid "Active Contests"
 msgstr "Concursuri Active"
 
-#: templates/contest/list.html:163 templates/contest/list.html:205
-#: templates/contest/list.html:243 templates/contest/list.html:280
+#: templates/contest/list.html:165 templates/contest/list.html:207
+#: templates/contest/list.html:245 templates/contest/list.html:282
 msgid "Contest"
 msgstr "Concurs"
 
-#: templates/contest/list.html:201
+#: templates/contest/list.html:182
+#, python-format
+msgid "Window ends in %(countdown)s"
+msgstr ""
+
+#: templates/contest/list.html:184 templates/contest/list.html:223
+#, python-format
+msgid "Ends in %(countdown)s"
+msgstr ""
+
+#: templates/contest/list.html:203
 msgid "Ongoing Contests"
 msgstr "Concursuri in Desfășurare"
 
-#: templates/contest/list.html:238
+#: templates/contest/list.html:240
 msgid "Upcoming Contests"
 msgstr "Concursuri Programate"
 
-#: templates/contest/list.html:266
+#: templates/contest/list.html:268
 msgid "There are no scheduled contests at this time."
 msgstr "Nu există concursuri programate în acest moment."
 
-#: templates/contest/list.html:272
+#: templates/contest/list.html:274
 msgid "Past Contests"
 msgstr "Concursuri Terminate"
 
@@ -4206,7 +4290,7 @@ msgid "Joining this contest will leave %(contest)s."
 msgstr "Alăturarea la acest concurs va duce la părăsirea %(contest)s."
 
 #: templates/contest/moss.html:28
-msgid "Are you sure you want MOSS the contest?"
+msgid "Are you sure you want to MOSS the contest?"
 msgstr ""
 
 #: templates/contest/moss.html:33
@@ -4308,8 +4392,8 @@ msgid "Language AC Rate"
 msgstr "Procent soluții corecte (AC) după limbă"
 
 #: templates/license.html:12
-msgid "Source:"
-msgstr "Sursă:"
+msgid "Visit source"
+msgstr ""
 
 #: templates/newsletter/common.html:6
 #: templates/newsletter/subscription_unsubscribe_activated.html:3
@@ -4370,7 +4454,7 @@ msgstr "Abonamentul dumneavoastră a fost actualizat cu succes."
 
 #: templates/newsletter/subscription_update_email_sent.html:8
 msgid "Your update request was successfully received and an activation email has been sent to you. In that email you will find a link which you need to follow in order to update your subscription."
-msgstr "Cererea dumneavoastră de actualizare a fost primită cu succes. Un email a fost trimis către dumneavoastră. Urmaţi link-ul de activare din acel email pentru a actualiza abonamentul."
+msgstr "Cererea dumneavoastră de actualizare a fost primită cu succes. Un email a fost trimis către dumneavoastră. Urmați link-ul de activare din acel email pentru a actualiza abonamentul."
 
 #: templates/organization/edit.html:47
 #: templates/organization/requests/pending.html:34
@@ -4392,11 +4476,11 @@ msgstr ""
 
 #: templates/organization/home.html:45
 msgid "Leave organization"
-msgstr "Părăsiţi organizaţia"
+msgstr "Părăsiți organizația"
 
 #: templates/organization/home.html:50
 msgid "Join organization"
-msgstr "Alăturaţi-vă organizaţiei"
+msgstr "Alăturați-vă organizației"
 
 #: templates/organization/home.html:54
 msgid "Request membership"
@@ -4404,7 +4488,7 @@ msgstr "Cerere de membru"
 
 #: templates/organization/home.html:60
 msgid "Edit organization"
-msgstr "Editează organizaţia"
+msgstr "Editează organizația"
 
 #: templates/organization/home.html:65
 msgid "View requests"
@@ -4448,7 +4532,7 @@ msgstr "Nume de utilizator:"
 
 #: templates/organization/requests/detail.html:17
 msgid "Organization:"
-msgstr "Organizaţie:"
+msgstr "Organizație:"
 
 #: templates/organization/requests/detail.html:25
 msgid "Time:"
@@ -4476,7 +4560,7 @@ msgstr "Nu aveți cereri de aprobare."
 #: templates/organization/requests/pending.html:17
 #: templates/problem/data.html:392
 msgid "Delete?"
-msgstr "Ştergeţi?"
+msgstr "Ștergeți?"
 
 #: templates/organization/requests/request.html:24
 msgid "Select your class:"
@@ -4490,21 +4574,9 @@ msgstr "Motivul pentru care doriți să vă alăturați:"
 msgid "Request"
 msgstr "Solicitare"
 
-#: templates/organization/requests/tabs.html:4
-msgid "Pending"
-msgstr "Nehotărât"
-
 #: templates/organization/requests/tabs.html:7
 msgid "Log"
 msgstr "Jurnal"
-
-#: templates/organization/requests/tabs.html:10
-msgid "Approved"
-msgstr "Aprobat"
-
-#: templates/organization/requests/tabs.html:13
-msgid "Rejected"
-msgstr "Respins"
 
 #: templates/organization/users-table.html:15
 msgid "Kick"
@@ -4689,7 +4761,7 @@ msgstr "Versiune PDF"
 #: templates/problem/problem.html:101 templates/problem/problem.html:111
 #: templates/problem/problem.html:116
 msgid "Submit solution"
-msgstr "Trimite soluţie"
+msgstr "Trimite soluție"
 
 #: templates/problem/problem.html:104
 #, python-format
@@ -4705,11 +4777,11 @@ msgstr ""
 
 #: templates/problem/problem.html:124
 msgid "My submissions"
-msgstr "Soluţiile mele"
+msgstr "Soluțiile mele"
 
 #: templates/problem/problem.html:128
 msgid "Best submissions"
-msgstr "Cele mai bune soluţii"
+msgstr "Cele mai bune soluții"
 
 #: templates/problem/problem.html:131
 msgid "Read editorial"
@@ -4741,7 +4813,7 @@ msgstr "Puncte:"
 
 #: templates/problem/problem.html:171 templates/problem/problem.html:173
 msgid "(partial)"
-msgstr "(parţial)"
+msgstr "(parțial)"
 
 #: templates/problem/problem.html:178
 msgid "Time limit:"
@@ -4800,7 +4872,7 @@ msgstr "Căutare probleme"
 
 #: templates/problem/search-form.html:8
 msgid "Search problems..."
-msgstr "Căutaţi problemele..."
+msgstr "Căutați problemele..."
 
 #: templates/problem/search-form.html:14
 msgid "Full text search"
@@ -4885,7 +4957,7 @@ msgstr "Nume de utilizator sau parolă invalide."
 #: templates/registration/login.html:53
 #: templates/registration/two_factor_auth.html:92
 msgid "Login!"
-msgstr "Conectaţi-vă!"
+msgstr "Conectați-vă!"
 
 #: templates/registration/login.html:56
 msgid "Forgot your password?"
@@ -4950,30 +5022,31 @@ msgstr ""
 msgid "To reset the password for your account \"%(username)s\", click the button below."
 msgstr ""
 
-#: templates/registration/password_reset_email.html:15
-msgid "See you soon! If you have problems resetting your email, feel free to shoot us an email at"
-msgstr "Ne vedem în curând! Dacă ai probleme cu resetarea e-mailului, nu ezita să ne conectezi prin e-mail la"
+#: templates/registration/password_reset_email.html:16
+#, python-format
+msgid "See you soon! If you have problems resetting your password, feel free to shoot us an email at %(email)s."
+msgstr ""
 
-#: templates/registration/password_reset_email.html:17
+#: templates/registration/password_reset_email.html:19
 msgid "See you soon!"
 msgstr "Ne vedem în curând!"
 
 #: templates/registration/password_reset_email.txt:1
 #, python-format
 msgid "You're receiving this email because you requested a password reset for your user account at %(site_name)s."
-msgstr "Ați primit acest email pentru că aţi solicitat resetarea parolei pentru contul dumneavoastră de utilizator pe %(site_name)s."
+msgstr "Ați primit acest email pentru că ați solicitat resetarea parolei pentru contul dumneavoastră de utilizator pe %(site_name)s."
 
 #: templates/registration/password_reset_email.txt:3
 msgid "Please go to the following page and choose a new password:"
-msgstr "Vă rugăm să accesați următoarea pagină şi să alegeţi o parolă nouă:"
+msgstr "Vă rugăm să accesați următoarea pagină și să alegeți o parolă nouă:"
 
 #: templates/registration/password_reset_email.txt:7
 msgid "Your username, in case you've forgotten:"
-msgstr "Numele de utilizator, în cazul in care aţi uitat:"
+msgstr "Numele de utilizator, în cazul in care ați uitat:"
 
 #: templates/registration/password_reset_email.txt:9
 msgid "Thanks for using our site!"
-msgstr "Vă mulţumim pentru utilizarea site-ului nostru!"
+msgstr "Vă mulțumim pentru utilizarea site-ului nostru!"
 
 #: templates/registration/password_reset_email.txt:11
 #, python-format
@@ -4985,7 +5058,7 @@ msgstr "Echipa %(site_name)s"
 msgid "Password reset on %(site_name)s"
 msgstr "Parola resetată pe %(site_name)s"
 
-#: templates/registration/profile_creation.html:36
+#: templates/registration/profile_creation.html:48
 #: templates/registration/username_select.html:7
 msgid "Continue >"
 msgstr "Continuă >"
@@ -4998,41 +5071,37 @@ msgstr "Înregistrarea este închisă în prezent. Vă rugăm să luați legătu
 msgid "You have successfully been registered. An email has been sent to the email address you provided to confirm your registration."
 msgstr "V-ați înregistrat cu succes! Un email a fost trimis la adresa de email oferită pentru a confirma înregistrarea dumneavoastră."
 
-#: templates/registration/registration_form.html:164
+#: templates/registration/registration_form.html:170
 msgid "(again, for confirmation)"
 msgstr ""
 
-#: templates/registration/registration_form.html:171
+#: templates/registration/registration_form.html:177
 msgid "(select your closest major city)"
 msgstr ""
 
-#: templates/registration/registration_form.html:176
+#: templates/registration/registration_form.html:182
 msgid "pick from map"
 msgstr "alege de pe hartă"
 
-#: templates/registration/registration_form.html:181
+#: templates/registration/registration_form.html:187
 msgid "Default language"
 msgstr ""
 
-#: templates/registration/registration_form.html:184
-#: templates/user/edit-profile.html:314
+#: templates/registration/registration_form.html:190
+#: templates/user/edit-profile.html:308
 msgid "Affiliated organizations"
 msgstr ""
 
-#: templates/registration/registration_form.html:190
-#: templates/user/edit-profile.html:328
+#: templates/registration/registration_form.html:196
+#: templates/user/edit-profile.html:322
 msgid "Notify me about upcoming contests"
 msgstr ""
 
-#: templates/registration/registration_form.html:204
-msgid "By registering, you agree to our"
-msgstr "Prin înregistrare, ești de acord cu"
+#: templates/registration/registration_form.html:210
+msgid "By registering, you agree to our [Terms & Conditions][0]."
+msgstr ""
 
-#: templates/registration/registration_form.html:205
-msgid "Terms & Conditions"
-msgstr "Termeni și condiții"
-
-#: templates/registration/registration_form.html:208
+#: templates/registration/registration_form.html:213
 msgid "Register!"
 msgstr "Înscrie-te!"
 
@@ -5041,7 +5110,8 @@ msgid "To protect your account, you must first authenticate before you can disab
 msgstr "Pentru a îți proteja contul, trebuie mai întâi să te autentifici înainte de a putea dezactiva autentificarea în doi pași."
 
 #: templates/registration/totp_disable.html:38
-msgid "Enter the 6-digit code generated by your app or one of your 16-digit scratch codes:"
+#: templates/registration/two_factor_auth.html:79
+msgid "Enter the 6-digit code generated by your app or one of your 16-character scratch codes:"
 msgstr ""
 
 #: templates/registration/totp_disable.html:41
@@ -5073,14 +5143,17 @@ msgid "Enable Two Factor Authentication"
 msgstr ""
 
 #: templates/registration/totp_enable.html:98
+#: templates/user/edit-profile.html:375
 msgid "Below is a list of one-time use scratch codes."
 msgstr ""
 
 #: templates/registration/totp_enable.html:99
+#: templates/user/edit-profile.html:376
 msgid "These codes can only be used once and are for emergency use."
 msgstr ""
 
 #: templates/registration/totp_enable.html:100
+#: templates/user/edit-profile.html:377
 msgid "You can use these codes to login to your account or disable two-factor authentication."
 msgstr ""
 
@@ -5089,6 +5162,7 @@ msgid "If you ever need more scratch codes, you can regenerate them on the edit 
 msgstr ""
 
 #: templates/registration/totp_enable.html:102
+#: templates/user/edit-profile.html:379
 msgid "Please write these down and keep them in a secure location."
 msgstr ""
 
@@ -5106,17 +5180,13 @@ msgid "If you lose your authentication device and are unable to use your scratch
 msgstr ""
 
 #: templates/registration/two_factor_auth.html:33
-#: templates/user/edit-profile.html:165
+#: templates/user/edit-profile.html:164
 msgid "WebAuthn is not supported by your browser."
 msgstr ""
 
 #: templates/registration/two_factor_auth.html:54
-#: templates/user/edit-profile.html:189
+#: templates/user/edit-profile.html:188
 msgid "Failed to contact server."
-msgstr ""
-
-#: templates/registration/two_factor_auth.html:79
-msgid "Enter the 6-digit code generated by your app or one of your 16-character scratch codes:"
 msgstr ""
 
 #: templates/registration/two_factor_auth.html:81
@@ -5290,20 +5360,24 @@ msgid "Execution Results"
 msgstr "Rezultate de Executare"
 
 #: templates/submission/status-testcases.html:51
-msgid "Batch "
-msgstr "Lot "
+#, python-format
+msgid "Batch #%(id)d"
+msgstr "Lot #%(id)d"
 
 #: templates/submission/status-testcases.html:64
-msgid "Case"
-msgstr "Caz"
+#, python-format
+msgid "Case #%(id)d:"
+msgstr "Cazul #%(id)d:"
 
 #: templates/submission/status-testcases.html:66
-msgid "Pretest"
-msgstr "Pretest"
+#, python-format
+msgid "Pretest #%(id)d:"
+msgstr "Pretest #%(id)d:"
 
 #: templates/submission/status-testcases.html:68
-msgid "Test case"
-msgstr "Caz de test"
+#, python-format
+msgid "Test case #%(id)d:"
+msgstr "Caz de test #%(id)d:"
 
 #: templates/submission/status-testcases.html:101
 msgid "Your output (clipped)"
@@ -5425,10 +5499,6 @@ msgstr ""
 msgid "Please keep in mind that this form is for reporting issues with a problem statement, and not for asking for help. If you require assistance on solving a problem, ask in the comments instead."
 msgstr ""
 
-#: templates/ticket/ticket.html:356
-msgid "Post"
-msgstr ""
-
 #: templates/ticket/ticket.html:364
 msgid "Associated object"
 msgstr ""
@@ -5461,136 +5531,151 @@ msgstr "Rang"
 msgid "Search by handle..."
 msgstr ""
 
-#: templates/user/edit-profile.html:113
+#: templates/user/edit-profile.html:107
+msgid "The administrators for this site require all the staff to have Two-factor Authentication enabled, so it may not be disabled at this time."
+msgstr ""
+
+#: templates/user/edit-profile.html:112
 msgid "Are you sure you want to generate or regenerate your API token?"
 msgstr ""
 
-#: templates/user/edit-profile.html:114
+#: templates/user/edit-profile.html:113
 msgid "This will invalidate any previous API tokens."
 msgstr ""
 
-#: templates/user/edit-profile.html:115
+#: templates/user/edit-profile.html:114
 msgid "It also allows access to your account without Two-factor Authentication."
 msgstr ""
 
-#: templates/user/edit-profile.html:116
-msgid "You will not be able to view your api token after you leave this page!"
+#: templates/user/edit-profile.html:115
+msgid "You will not be able to view your API token after you leave this page!"
 msgstr ""
 
-#: templates/user/edit-profile.html:117 templates/user/edit-profile.html:211
+#: templates/user/edit-profile.html:116 templates/user/edit-profile.html:210
 msgid "Generating..."
 msgstr "Se generează..."
 
-#: templates/user/edit-profile.html:125 templates/user/edit-profile.html:247
-#: templates/user/edit-profile.html:373 templates/user/edit-profile.html:395
+#: templates/user/edit-profile.html:124 templates/user/edit-profile.html:246
+#: templates/user/edit-profile.html:367 templates/user/edit-profile.html:397
 msgid "Regenerate"
 msgstr "Regenerează"
 
-#: templates/user/edit-profile.html:131 templates/user/edit-profile.html:397
+#: templates/user/edit-profile.html:130 templates/user/edit-profile.html:399
 msgid "Remove"
 msgstr "Șterge"
 
-#: templates/user/edit-profile.html:141
+#: templates/user/edit-profile.html:140
 msgid "Are you sure you want to remove your API token?"
 msgstr "Ești sigur că vrei să ștergi token-ul tău de API?"
 
-#: templates/user/edit-profile.html:148 templates/user/edit-profile.html:377
-#: templates/user/edit-profile.html:401
+#: templates/user/edit-profile.html:147 templates/user/edit-profile.html:371
+#: templates/user/edit-profile.html:403
 msgid "Generate"
 msgstr "Generează"
 
-#: templates/user/edit-profile.html:194
+#: templates/user/edit-profile.html:193
 msgid "Are you sure you want to delete this security key?"
 msgstr "Ești sigur că vrei să ștergi această cheie de securitate?"
 
-#: templates/user/edit-profile.html:284
+#: templates/user/edit-profile.html:207
+msgid "Are you sure you want to generate or regenerate a new set of scratch codes?"
+msgstr ""
+
+#: templates/user/edit-profile.html:208
+msgid "This will invalidate any previous scratch codes you have."
+msgstr ""
+
+#: templates/user/edit-profile.html:209 templates/user/edit-profile.html:380
+msgid "You will not be able to view your scratch codes after you leave this page!"
+msgstr ""
+
+#: templates/user/edit-profile.html:278
 msgid "Self-description"
 msgstr "Auto-descriere"
 
-#: templates/user/edit-profile.html:291
+#: templates/user/edit-profile.html:285
 msgid "Select your closest major city"
 msgstr "Selectează cel mai apropiat oraș major"
 
-#: templates/user/edit-profile.html:300
+#: templates/user/edit-profile.html:294
 msgid "Editor theme"
 msgstr "Temă editor"
 
-#: templates/user/edit-profile.html:305
+#: templates/user/edit-profile.html:299
 msgid "Math engine"
 msgstr "Motor de matematică"
 
-#: templates/user/edit-profile.html:339 templates/user/edit-profile.html:341
+#: templates/user/edit-profile.html:333 templates/user/edit-profile.html:335
 msgid "Change your avatar"
 msgstr "Schimbați avatarul"
 
-#: templates/user/edit-profile.html:346
+#: templates/user/edit-profile.html:340
 msgid "Change your password"
 msgstr "Schimbați parola"
 
-#: templates/user/edit-profile.html:359
+#: templates/user/edit-profile.html:353
 msgid "Two-factor Authentication is enabled"
 msgstr "Autentificarea în doi pași este activată"
 
-#: templates/user/edit-profile.html:362 templates/user/edit-profile.html:365
+#: templates/user/edit-profile.html:356 templates/user/edit-profile.html:359
 msgid "Disable"
 msgstr "Dezactivează"
 
-#: templates/user/edit-profile.html:367
+#: templates/user/edit-profile.html:361
 msgid "Refresh"
 msgstr "Reîmprospătează"
 
-#: templates/user/edit-profile.html:370
+#: templates/user/edit-profile.html:364
 msgid "Scratch Codes:"
 msgstr ""
 
-#: templates/user/edit-profile.html:374 templates/user/edit-profile.html:398
+#: templates/user/edit-profile.html:368 templates/user/edit-profile.html:400
 msgid "Hidden"
 msgstr "Ascuns"
 
-#: templates/user/edit-profile.html:384
+#: templates/user/edit-profile.html:378
+msgid "If you ever need more scratch codes, you can regenerate them here."
+msgstr ""
+
+#: templates/user/edit-profile.html:386
 msgid "Two-factor Authentication is disabled"
 msgstr ""
 
-#: templates/user/edit-profile.html:385
+#: templates/user/edit-profile.html:387
 msgid "Enable"
 msgstr "Activează"
 
-#: templates/user/edit-profile.html:392
+#: templates/user/edit-profile.html:394
 msgid "API Token"
 msgstr ""
 
-#: templates/user/edit-profile.html:409
+#: templates/user/edit-profile.html:411
 msgid "Security keys"
 msgstr "Chei de securitate"
 
-#: templates/user/edit-profile.html:419
+#: templates/user/edit-profile.html:421
 msgid "Delete"
 msgstr ""
 
-#: templates/user/edit-profile.html:426
+#: templates/user/edit-profile.html:428
 msgid "Enter a name for this key"
 msgstr ""
 
-#: templates/user/edit-profile.html:427
+#: templates/user/edit-profile.html:429
 msgid "Add"
 msgstr "Adaugă"
 
-#: templates/user/edit-profile.html:435
+#: templates/user/edit-profile.html:437
 msgid "User-script"
 msgstr "Script de utilizator"
 
-#: templates/user/edit-profile.html:439
+#: templates/user/edit-profile.html:441
 msgid "Update profile"
 msgstr "Actualizați profilul"
 
 #: templates/user/pp-row.html:26
 #, python-format
-msgid "%(pp).1fpp"
-msgstr ""
-
-#: templates/user/pp-row.html:28
-#, python-format
-msgid "%(pp).0fpp"
+msgid "weighted %(percent)s (%(pp)spp)"
 msgstr ""
 
 #: templates/user/prepare-data.html:64
@@ -5605,31 +5690,41 @@ msgstr ""
 msgid "Track progress"
 msgstr "Urmărește progresul"
 
-#: templates/user/prepare-data.html:86
+#: templates/user/prepare-data.html:85
+#, python-format
+msgid "You may only prepare a new data download once every %(duration)s."
+msgstr ""
+
+#: templates/user/prepare-data.html:87
 msgid "Once your data is ready, you will find a download link on this page."
 msgstr "De îndată ce datele tale sunt pregătite, vei găsi un link de descărcare pe această pagină."
 
-#: templates/user/prepare-data.html:103
+#: templates/user/prepare-data.html:104
 msgid "Submissions"
 msgstr "Submisii"
 
-#: templates/user/prepare-data.html:120
+#: templates/user/prepare-data.html:121
 msgid "Prepare new download"
 msgstr "Pregătește o descărcare nouă"
 
-#: templates/user/prepare-data.html:122
+#: templates/user/prepare-data.html:123
 msgid "Prepare download"
 msgstr "Pregătește descărcarea"
 
-#: templates/user/prepare-data.html:126
+#: templates/user/prepare-data.html:127
 msgid "Download prepared data"
 msgstr "Descarcă datele pregătite"
 
-#: templates/user/prepare-data.html:132
+#: templates/user/prepare-data.html:133
 msgid "Your data is ready!"
 msgstr "Datele tale sunt gata!"
 
-#: templates/user/prepare-data.html:136
+#: templates/user/prepare-data.html:135
+#, python-format
+msgid "You will need to wait %(countdown)s to prepare a new data download."
+msgstr ""
+
+#: templates/user/prepare-data.html:137
 msgid "Download data"
 msgstr "Descarcă datele"
 
@@ -5647,11 +5742,11 @@ msgstr "Despre"
 
 #: templates/user/user-about.html:40
 msgid "You have not shared any information."
-msgstr "Nu aţi împărtăşit nicio informaţie."
+msgstr "Nu ați împărtășit nicio informație."
 
 #: templates/user/user-about.html:42
 msgid "This user has not shared any information."
-msgstr "Acest utilizator nu a împărtăşit nicio informaţie."
+msgstr "Acest utilizator nu a împărtășit nicio informație."
 
 #: templates/user/user-about.html:59
 msgid "Sun"
